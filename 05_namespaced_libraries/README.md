@@ -101,4 +101,4 @@ Run these tests by changing to the root folder (where this README.md file is con
 
 License and Authors
 -------------------
-Authors: NVM Automation team
+Authors: Chris Sullivan
