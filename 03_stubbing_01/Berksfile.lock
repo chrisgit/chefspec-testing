@@ -1,0 +1,7 @@
+DEPENDENCIES
+  stubbing
+    path: .
+    metadata: true
+
+GRAPH
+  stubbing (1.0.0)

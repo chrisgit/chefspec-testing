@@ -1,0 +1,7 @@
+DEPENDENCIES
+  windows_tests_on_linux
+    path: .
+    metadata: true
+
+GRAPH
+  windows_tests_on_linux (1.0.0)
