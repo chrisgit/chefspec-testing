@@ -1,11 +1,6 @@
 require 'spec_helper'
 require 'unit/install_and_configure_support'
 
-module MyCompany
-    module Software
-    end
-end
-
 describe 'namespaced_mixin::install_and_configure' do
 	let(:chef_instance) { ChefSpec::SoloRunner.new(platform: 'windows', version: '2012') }
 
@@ -15,7 +10,6 @@ describe 'namespaced_mixin::install_and_configure' do
 
     context 'when software not installed' do
         it 'should install and configure software' do
-            stub_mycompany_software_library(true)
             allow(MyCompany::Software).to receive(:apply_config?).and_return(true) #=> Used in Compile Phase
             
             chef_run = chef_instance.converge(described_recipe) do
@@ -29,7 +23,6 @@ describe 'namespaced_mixin::install_and_configure' do
     
     context 'when software already installed' do
         it 'should install and configure software' do
-            stub_mycompany_software_library(false)
             allow(MyCompany::Software).to receive(:apply_config?).and_return(false) #=> Used in Compile Phase 
             
             chef_run = chef_instance.converge(described_recipe) do
