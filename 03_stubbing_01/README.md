@@ -1,6 +1,6 @@
 Stubbing 01
 ====================
-The example code here contains a stub for File.exists? but goes on to call the original code (i.e. actually running File.exists?), see below
+The example code here contains a stub for File.exists? but goes on to call the original code (i.e. it will actually running File.exists?)
 
 ````
 allow(File).to receive(:exists?).with(anything).and_call_original
@@ -42,13 +42,12 @@ rspec ./spec/unit/configure_software_spec.rb:16 # stubbing::configure_software w
 
 ````
 
-Ah! Fauxhai is using the File class.
-
-Problem: We want to stub File.exist? and use fauxhai to spoof our platform.
+It looks like Fauxhai is using the File.Exists? method, so our problem statement becomes
+* We want to stub File.exist? and use fauxhai to spoof our platform.
 
 Run these tests by changing to the root folder (where this README.md file is contained) and typing RSpec, if necessary include pry and add breakpoints to step through the code.
 
-NB: Running this example will fail, that is intentional, uncommenting
+NB: Running this example will fail, that is intentional.
 
 The rest of the examples for stubbing will change the way the stubs are performed to fix the tests!
 

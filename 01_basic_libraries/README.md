@@ -6,11 +6,11 @@ My preference is to ensure that Chef Recipe files only have resources declared i
 
 Library code should be unit tested in the same way as any other piece of code.
 
-If your Library code is declared inside methods and does not have a namespace it will automatically be available to Chef resources and Chef recipies but you do not need a recipe in order to test the library function.
+If your Library code is declared inside methods that are not namespaced they will automatically be available to Chef resources and Chef recipies but you do not need a recipe in order to test the library function.
 
 To test a library function or Ruby code all you need is a basic understanding of RSpec.
 
-Here we have two basic library functions we might use in a Chef recipe, one merges the hostname and ipaddress, the other gets the version number from a version.txt file.
+In this example we have two basic library functions we might use in a Chef recipe, one merges the hostname and ipaddress, the other gets the version number from a version.txt file.
 
 ````
 def merge_computername_ipv4

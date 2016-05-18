@@ -3,7 +3,7 @@ Stubbing 03
 (cont.)
 Problem: We want to stub File.exist? and use fauxhai to spoof our platform.
 
-We've used File.exists? in our code but sometimes the better way write Ruby methods that ask questions is to ask in the singular form, it makes more sense and reads better.
+We've used File.exists? in our code but Ruby questions are normally in singular form, it makes more sense and reads better.
 
 The File class has an exists? method and an exist? method, the exists? method is marked for deprecation so it's best to use exist?. 
 

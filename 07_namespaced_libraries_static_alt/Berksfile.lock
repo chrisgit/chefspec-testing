@@ -1,0 +1,7 @@
+DEPENDENCIES
+  namespaced_mixin
+    path: .
+    metadata: true
+
+GRAPH
+  namespaced_mixin (1.0.0)

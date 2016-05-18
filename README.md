@@ -6,10 +6,10 @@ Manual testing can be time consuming and prone to error, most developers (and te
 
 If you imbue the Chef eco system it won't be long before you are introduced to an integration test tool like ServerSpec or Inspec.
 
-Integration tests are good but because they exercise entire systems or sub-systems but the feedback can be slow and debugging any issues time consuming.
+Integration tests are good but because they exercise entire systems or sub-systems the feedback can be slow and debugging any issues time consuming.
 
 When code reviewing test suites for ServerSpec or Inspec I'd noticed a common pattern occuring; although there would be several test suites written by the developers the only variances were for slight changes in behavior.
-Typically those variances would be to include a recipe, guard a resource or sometimes just the content of a configuration file.
+Typically those variances would be to include a recipe, guard a resource or sometimes just vary the content of a configuration file.
 
 Wouldn't it be great if there was a unit testing framework for Chef to test behaviors and give faster feedback?
 
@@ -31,9 +31,11 @@ For example
 * Explain usage of Before(:each) v Before(:all) and After(:each) v After (:all) and Around(:each), when are those blocks run?
 * How do I write shared tests
 
-Once the basic understand of RSpec has been gained most of the questions then relate to testing code in Chef libraries which is the main reason for these examples.
+Once the basic understand of RSpec has been learnt the remainder of the questions relate to testing code in Chef libraries which is the main reason for these examples.
 
-My recommendation is to view the examples in order (01..07) 
+My recommendation is to view the examples in order (01..07).
+
+Chef is a great DSL but knowledge of Ruby and the underlying framework are invaluable.
 
 Learning resource
 -----------------

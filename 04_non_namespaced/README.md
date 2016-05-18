@@ -1,7 +1,7 @@
 Library methods without namespaces
 ==================================
 
-How and why are these automatically made available to Chef::Recipe and Chef::Resource classes?
+A method without a namespace in a library file can be called directly in Chef::Recipe and Chef::Resource classes, how is that possible?
 
 Ruby methods without a namespace
 --------------------------------
